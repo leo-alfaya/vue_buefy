@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Menu :items="items"></Menu>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/Menu'
 
 export default {
   name: 'app',
+  data: function() {
+    return {
+      items: [
+        {id: 1, text: 'Clientes'},
+        {id: 2, text: 'Projetos'},
+        {id: 3, text: 'Trilhas'},
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    Menu
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
