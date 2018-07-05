@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-start">
       <a class="navbar-item" v-for="item in items" v-bind:key="item.key">
         {{ item.text }}
