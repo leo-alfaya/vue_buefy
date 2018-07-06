@@ -11,9 +11,6 @@
           <p class="title is-4">{{ cliente.nome }}</p>
         </div>
       </div>
-      <div class="content">
-
-      </div>
     </div>
   </div>
 </template>

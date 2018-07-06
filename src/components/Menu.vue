@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-start">
+    <div class="container">
       <a class="navbar-item" v-for="item in items" v-bind:key="item.key">
         {{ item.text }}
       </a>

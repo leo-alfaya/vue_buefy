@@ -1,14 +1,8 @@
 <template>
   <div id="app">
-    <section class="hero is-fullheight">
-      <div class="hero-head">
-        <Menu :items="items"></Menu>
-      </div>
-      <div class="hero-body">
-        <div class="container">
-          <Cliente :clientes="clientes"></Cliente>
-        </div>
-      </div>
+    <section class="content">
+      <Menu :items="items"></Menu>
+      <Cliente :clientes="clientes"></Cliente>
     </section>
   </div>
 </template>
@@ -32,6 +26,8 @@ export default {
         {id: 5, nome: 'Cliente_5'},
         {id: 6, nome: 'Cliente_6'},
         {id: 7, nome: 'Cliente_7'},
+        {id: 8, nome: 'Cliente_8'},
+        {id: 9, nome: 'Cliente_9'},
       ]
     }
   },
@@ -44,6 +40,11 @@ export default {
 
 <style lang="scss">
   body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
     width: 100%;
     height: 100%;
   }
